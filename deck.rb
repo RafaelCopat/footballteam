@@ -1,17 +1,20 @@
 require 'squib'
 
-Squib::Deck.new(cards: 4, layout: 'layout.yml') do
+Squib::Deck.new(cards: 4, layout: %w(hand.yml layout.yml)) do
   background color: '#230602'
-  deck = xlsx file: 'bigger.xlsx'
+  deck = xlsx file: 'even-bigger.xlsx'
+  svg file: deck['Art'], layout: 'Art'
 
-  text str: deck['Title'], layout: :Title
+  %w(Title Description Snark).each do |key|
+    text str: deck[key], layout: key
+  end
 
-  svg file: 'attack.svg', layout: :AttackIcon
-  text str: deck['Attack'], layout: :AttackText
+  %w(Attack Defend Health).each do |key|
+    svg file: "#{key.downcase}.svg", layout: "#{key}Icon"
+    text str: deck[key], layout: key
+  end
 
-  svg file: 'defend.svg', layout: :DefendIcon
-  text str: deck['Defend'], layout: :DefendText
-
-  save_png prefix: 'bigger_'
+  save_png prefix: 'even_bigger_'
+  showcase file: 'showcase.png', fill_color: '#0000'
+  hand file: 'hand.png', trim: 37.5, trim_radius: 25, fill_color: '#0000'
 end
-

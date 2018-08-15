@@ -1,31 +1,47 @@
-
-
-AllText:
-  font: ChunkFive Roman,Sans 32
+Title:
+  extends: title # from hand.ymlha
+  font: ChunkFive Roman,Sans 16
+  color: '#F3EFE3'
   align: center
+  spacing: -15
+
+Art:
+  extends: art # from hand.yml
+
+Description:
+  extends: description # from hand.yml
+  font: Sans 12
+  color: '#F3EFE3'
+  align: center
+
+Snark:
+  extends: snark # from hand.yml
+  font: Sans italic 4
+  align: center
+  valign: middle
   color: '#F3EFE3'
 
-Title:
-  extends: AllText
-  width: 825
-  y: 150
-
-AttackText:
-  extends: AllText
-  x: 300
-  y: 500
-  font_size: 28
+Attack:
+  extends: bonus1 # from hand.yml
+  font: ChunkFive Roman,Sans 12
+  color: '#F3EFE3'
+  y: += 70
 AttackIcon:
-  extends: AttackText
-  x: += 75
-  y: -= 15
-  width: 150
-  height: 150
+  extends: bonus1 # from hand.yml
+  x: += 40
+  width: -= 40
+  height: -= 40
 
-DefendText:
-  extends: AttackText
+Defend:
+  extends: Attack
   y: += 200
 DefendIcon:
   extends: AttackIcon
   y: += 200
 
+Health:
+  extends: Defend
+  y: += 200
+HealthIcon:
+  extends: DefendIcon
+  y: += 200
