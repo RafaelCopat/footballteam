@@ -7,7 +7,7 @@
 # Along the lines of Race for the Galaxy or 7 Wonders
 # Based on TheGameCrafter.com's Poker Card, which is 825x1125
 # Sample usage is found in samples/layouts.rb
-title:
+footballers:
   x: 275
   y: 75
   width: 475
@@ -17,12 +17,12 @@ art:
   y: 225
   width: 475
   height: 475
-description:
+cost:
   x: 275
   y: 725
   width: 475
   height: 200
-snark:
+description:
   x: 275
   y: 950
   width: 475

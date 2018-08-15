@@ -1,0 +1,47 @@
+Footballers:
+  extends: footballers # from hand.ymlha
+  font: ChunkFive Roman,Sans 16
+  color: '#F3EFE3'
+  align: center
+  spacing: -15
+
+Art:
+  extends: art # from hand.yml
+
+Cost:
+  extends: cost # from hand.yml
+  font: Sans 12
+  color: '#F3EFE3'
+  align: center
+
+Description:
+  extends: description # from hand.yml
+  font: Sans italic 4
+  align: center
+  valign: middle
+  color: '#F3EFE3'
+
+Defence:
+  extends: bonus1 # from hand.yml
+  font: ChunkFive Roman,Sans 12
+  color: '#F3EFE3'
+  y: += 70
+DefenceIcon:
+  extends: bonus1 # from hand.yml
+  x: += 40
+  width: -= 40
+  height: -= 40
+
+Assisting:
+  extends: Defence
+  y: += 200
+AssistingIcon:
+  extends: DefenceIcon
+  y: += 200
+
+Shooting:
+  extends: Assisting
+  y: += 200
+ShootingIcon:
+  extends: AssistingIcon
+  y: += 200
