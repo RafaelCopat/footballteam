@@ -7,13 +7,13 @@
 # Along the lines of Race for the Galaxy or 7 Wonders
 # Based on TheGameCrafter.com's Poker Card, which is 825x1125
 # Sample usage is found in samples/layouts.rb
-footballers:
+tactics:
   x: 275
   y: 40
   width: 475
   height: 125
 art:
-  x: 275
+  x: 175
   y: 225
   width: 475
   height: 475
@@ -22,41 +22,8 @@ cost:
   y: 100
   width: 125
   height: 125
-description:
-  x: 275
+text:
+  x: 0
   y: 650
-  width: 475
+  width: 825
   height: 400
-bonus1:
-  x: 200
-  y: 700
-  width:  125
-  height: 125
-bonus2:
-  extends: bonus1
-  y: += 198
-bonus3:
-  extends: bonus2
-  y: += 198
-bonus4:
-  extends: bonus3
-  y: += 198
-bonus5:
-  extends: bonus4
-  y: += 198
-
-# The "cut line", without rounded corners
-cut:
-  x: 37.5
-  y: 37.5
-  width: 750
-  height: 1050
-
-# The "safe zone" as defined by TheGameCrafter poker cards
-safe:
-  x: 75
-  y: 75
-  width: 675
-  height: 975
-  radius: 16
-  dash: 3 3

@@ -1,0 +1,26 @@
+Tactics:
+  extends: tactics # from hand.yml
+  font: ChunkFive Roman,Sans 16
+  color: '#F3EFE3'
+  align: center
+  spacing: -15
+
+Art:
+  extends: art # from hand.yml
+
+Cost:
+  extends: cost # from hand.yml
+  font: Sans 18
+  color: '#F3EFE3'
+  
+CostIcon:
+  extends: cost # from hand.yml
+  x: -= 75
+  y: -= 50
+  
+Text:
+  extends: text # from hand.yml
+  font: Sans 12
+  align: center
+  valign: middle
+  color: '#F3EFE3'
