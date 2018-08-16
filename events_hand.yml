@@ -12,20 +12,22 @@ events:
   y: 75
   width: 825
   height: 125
-type:
-  x: 0
-  y: 150
-  width: 825
-  height: 125
 art:
   x: 175
-  y: 200
+  y: 125
   width: 475
   height: 475
+  
+arrow:
+  x: 100
+  y: 525
+  width: 625
+  height: 15
+
 
 test1:
-  x: 100
-  y: 650
+  x: 140
+  y: 550
   width: 125
   height: 125
 test2:
@@ -33,14 +35,14 @@ test2:
   x: += 156
 test3:
   extends: test2
-  y: += 156
+  x: += 156
 test4:
   extends: test3
-  y: += 156
+  x: += 156
   
 difficulty1:
-  x: 100
-  y: 750
+  x: 140
+  y: 675
   width: 125
   height: 125
 difficulty2:
@@ -48,15 +50,15 @@ difficulty2:
   x: += 156
 difficulty3:
   extends: difficulty2
-  y: += 156
+  x: += 156
 difficulty4:
   extends: difficulty3
-  y: += 156
+  x: += 156
   
   
 reward:
-  x: 175
-  y: 850
+  x: 75
+  y: 950
   width: 125
   height: 125
 text:

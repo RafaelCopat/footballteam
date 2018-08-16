@@ -9,10 +9,16 @@ Squib::Deck.new(cards: 9, layout: %w(footballers_hand.yml footballers_layout.yml
     text str: deck[key], layout: key
   end
 
-  %w(Defence Assisting Shooting Cost).each do |key|
+  %w(Cost).each do |key|
     svg file: "footballers_#{key.downcase}.svg", layout: "#{key}Icon"
     text str: deck[key], layout: key
   end
+  
+  %w(Defence Assisting Shooting).each do |key|
+    svg file: "#{key.downcase}.svg", layout: "#{key}Icon"
+    text str: deck[key], layout: key
+  end
+
 
   save_png prefix: 'footballers_'
   showcase file: 'footballers_showcase.png', fill_color: '#0000'

@@ -1,15 +1,16 @@
 require 'squib'
 
 Squib::Deck.new(cards: 5, layout: %w(events_hand.yml events_layout.yml)) do
-  background color: '#0012FF'
+  background color: '#012456'
   deck = xlsx file: 'events.xlsx'
   svg file: 'events_main.svg', layout: 'Art'
+  png file: 'events_right.png', layout: 'Arrow'
   svg file: deck['Test1'], layout: 'Test1'
   svg file: deck['Test2'], layout: 'Test2'
   svg file: deck['Test3'], layout: 'Test3'
   svg file: deck['Test4'], layout: 'Test4'
 
-  %w(Events Type Text Difficulty1 Difficulty2 Difficulty3 Difficulty4).each do |key|
+  %w(Events Text Difficulty1 Difficulty2 Difficulty3 Difficulty4).each do |key|
     text str: deck[key], layout: key
   end
 
