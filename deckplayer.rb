@@ -5,11 +5,11 @@ Squib::Deck.new(cards: 9, layout: %w(hand.yml layoutplayer.yml)) do
   deck = xlsx file: 'footballers.xlsx'
   svg file: 'footballer.svg', layout: 'Art'
 
-  %w(Footballers Cost Description).each do |key|
+  %w(Footballers Description).each do |key|
     text str: deck[key], layout: key
   end
 
-  %w(Defence Assisting Shooting).each do |key|
+  %w(Defence Assisting Shooting Cost).each do |key|
     svg file: "#{key.downcase}.svg", layout: "#{key}Icon"
     text str: deck[key], layout: key
   end

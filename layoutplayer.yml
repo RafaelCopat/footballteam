@@ -12,11 +12,16 @@ Cost:
   extends: cost # from hand.yml
   font: Sans 12
   color: '#F3EFE3'
-  align: center
+  
+CostIcon:
+  extends: cost # from hand.yml
+  x: -= 100
+  width: -= 40
+  height: -= 40
 
 Description:
   extends: description # from hand.yml
-  font: Sans italic 4
+  font: Sans 10
   align: center
   valign: middle
   color: '#F3EFE3'
@@ -25,23 +30,23 @@ Defence:
   extends: bonus1 # from hand.yml
   font: ChunkFive Roman,Sans 12
   color: '#F3EFE3'
-  y: += 70
+  #y: += 70
 DefenceIcon:
   extends: bonus1 # from hand.yml
-  x: += 40
+  x: -= 100
   width: -= 40
   height: -= 40
 
 Assisting:
   extends: Defence
-  y: += 200
+  y: += 100
 AssistingIcon:
   extends: DefenceIcon
-  y: += 200
+  y: += 100
 
 Shooting:
   extends: Assisting
-  y: += 200
+  y: += 100
 ShootingIcon:
   extends: AssistingIcon
-  y: += 200
+  y: += 100

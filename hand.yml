@@ -18,20 +18,20 @@ art:
   width: 475
   height: 475
 cost:
-  x: 275
-  y: 725
-  width: 475
-  height: 200
+  x: 200
+  y: 100
+  width: 125
+  height: 125
 description:
   x: 275
-  y: 950
+  y: 650
   width: 475
-  height: 100
+  height: 400
 bonus1:
-  x: 75
-  y: 75
-  width:  175
-  height: 175
+  x: 200
+  y: 700
+  width:  125
+  height: 125
 bonus2:
   extends: bonus1
   y: += 198
