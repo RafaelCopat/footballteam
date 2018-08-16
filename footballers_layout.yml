@@ -1,5 +1,5 @@
 Footballers:
-  extends: footballers # from hand.ymlha
+  extends: footballers # from hand.yml
   font: ChunkFive Roman,Sans 16
   color: '#F3EFE3'
   align: center
@@ -10,14 +10,13 @@ Art:
 
 Cost:
   extends: cost # from hand.yml
-  font: Sans 12
+  font: Sans 18
   color: '#F3EFE3'
   
 CostIcon:
   extends: cost # from hand.yml
-  x: -= 100
-  width: -= 40
-  height: -= 40
+  x: -= 75
+  y: -= 50
 
 Description:
   extends: description # from hand.yml
