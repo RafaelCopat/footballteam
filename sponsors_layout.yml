@@ -1,0 +1,15 @@
+Sponsors:
+  extends: sponsors # from hand.yml
+  font: ChunkFive Roman,Sans 20
+  color: '#FFFFFF'
+  align: center
+  spacing: -15
+
+Value:
+  extends: value # from hand.yml
+  font: Sans 30
+  align: center
+  color: '#F3EFE3'
+
+Art:
+  extends: art # from hand.yml
