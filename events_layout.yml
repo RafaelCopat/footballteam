@@ -1,0 +1,67 @@
+Events:
+  extends: events # from hand.yml
+  font: ChunkFive Roman,Sans 16
+  color: '#F3EFE3'
+  align: center
+  spacing: -15
+
+Art:
+  extends: art # from hand.yml
+  align: center
+  
+Type:
+  extends: type # from hand.yml
+  font: ChunkFive Roman,Sans 14
+  color: '#F3EFE3'
+  align: center
+  spacing: -15
+
+Test1:
+  extends: test1 # from hand.yml
+  
+Test1:
+  extends: test1 # from hand.yml
+  
+Test2:
+  extends: test2 # from hand.yml
+  
+Test3:
+  extends: test3 # from hand.yml
+  
+Test4:
+  extends: test4 # from hand.yml
+  
+Difficulty1:
+  extends: difficulty1 # from hand.yml
+  font: Sans 18
+  color: '#1C1C1C'
+  
+Difficulty2:
+  extends: difficulty2 # from hand.yml
+  font: Sans 18
+  color: '#1C1C1C'
+  
+Difficulty3:
+  extends: difficulty3 # from hand.yml
+  font: Sans 18
+  color: '#1C1C1C'
+  
+Difficulty4:
+  extends: difficulty4 # from hand.yml
+  font: Sans 18
+  color: '#1C1C1C'  
+
+Reward:
+  extends: reward # from hand.yml
+  font: ChunkFive Roman,Sans 12
+  color: '#F3EFE3'
+RewardIcon:
+  extends: reward # from hand.yml
+  x: -= 100
+  
+Text:
+  extends: text # from hand.yml
+  font: Sans 10
+  align: center
+  valign: middle
+  color: '#F3EFE3'

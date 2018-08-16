@@ -1,0 +1,82 @@
+# A layout designed for a card to be held in your hand.
+#   * Bonuses align along the left-hand side.
+#   * Title along the top.
+#   * Middle area for artwork,
+#   * Room for a text description
+#   * And some theme-based text (which I like call the "snark")
+# Along the lines of Race for the Galaxy or 7 Wonders
+# Based on TheGameCrafter.com's Poker Card, which is 825x1125
+# Sample usage is found in samples/layouts.rb
+events:
+  x: 0
+  y: 75
+  width: 825
+  height: 125
+type:
+  x: 0
+  y: 150
+  width: 825
+  height: 125
+art:
+  x: 175
+  y: 200
+  width: 475
+  height: 475
+
+test1:
+  x: 100
+  y: 650
+  width: 125
+  height: 125
+test2:
+  extends: test1
+  x: += 156
+test3:
+  extends: test2
+  y: += 156
+test4:
+  extends: test3
+  y: += 156
+  
+difficulty1:
+  x: 100
+  y: 750
+  width: 125
+  height: 125
+difficulty2:
+  extends: difficulty1
+  x: += 156
+difficulty3:
+  extends: difficulty2
+  y: += 156
+difficulty4:
+  extends: difficulty3
+  y: += 156
+  
+  
+reward:
+  x: 175
+  y: 850
+  width: 125
+  height: 125
+text:
+  x: 275
+  y: 650
+  width: 475
+  height: 400
+
+# The "cut line", without rounded corners
+cut:
+  x: 37.5
+  y: 37.5
+  width: 750
+  height: 1050
+
+# The "safe zone" as defined by TheGameCrafter poker cards
+safe:
+  x: 75
+  y: 75
+  width: 675
+  height: 975
+  radius: 16
+  dash: 3 3
