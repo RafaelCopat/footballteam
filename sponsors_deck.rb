@@ -1,6 +1,6 @@
 require 'squib'
 
-Squib::Deck.new(cards: 2, layout: %w(sponsors_hand.yml sponsors_layout.yml)) do
+Squib::Deck.new(cards: 4, layout: %w(sponsors_hand.yml sponsors_layout.yml)) do
   background color: '#d1b100'
   deck = xlsx file: 'sponsors.xlsx'
   svg file: 'sponsors_main.svg', layout: 'Art'
