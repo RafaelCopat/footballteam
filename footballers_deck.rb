@@ -1,6 +1,6 @@
 require 'squib'
 
-Squib::Deck.new(cards: 9, layout: %w(footballers_hand.yml footballers_layout.yml)) do
+Squib::Deck.new(cards: 19, layout: %w(footballers_hand.yml footballers_layout.yml)) do
   background color: '#27562b'
   deck = xlsx file: 'footballers.xlsx'
   svg file: 'footballers_main.svg', layout: 'Art'
